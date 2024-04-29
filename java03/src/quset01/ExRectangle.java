@@ -18,4 +18,5 @@ public class ExRectangle {
 		
 	 sc.close();
 	}
+	
 }
