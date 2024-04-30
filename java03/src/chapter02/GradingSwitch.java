@@ -2,6 +2,8 @@ package chapter02;
 
 import java.util.Scanner;
 
+//점수를 입력받아서 등급 매기기 
+
 public class GradingSwitch {
 	public static void main(String[] args) {
 		
