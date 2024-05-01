@@ -24,7 +24,7 @@ public class ContinueTest {
 			
 			
 			//n의 갯수를 구하는 메소드 사용법
-			if (s.charAt(i) != 'n') {
+			if (s.charAt(i) != 'e') {
 				continue;
 			}
 			//n일떄 카운트 한다 

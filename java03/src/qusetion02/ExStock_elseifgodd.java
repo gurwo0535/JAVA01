@@ -2,7 +2,7 @@ package qusetion02;
 
 import java.util.Scanner;
 
-public class ExStock {
+public class ExStock_elseifgodd {
 	public static void main(String[] args) {
 
 
@@ -23,7 +23,7 @@ public class ExStock {
 			}else {
 				System.out.println("히락장");				
 			}
-		} else {
+		} else {	
 			if (kospi>=2200) {
 				System.out.println("상승장");
 			}else if (kospi>=2000) {
