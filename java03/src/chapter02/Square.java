@@ -36,9 +36,10 @@ public class Square {
 //		return;
 //		return "";   / 타입 불 일치시 오류 (STRING)+
 //		return 0;  타입 불 일치시 오류 (int)
-			return length*length;
+			int a= length*length;
+			return a;
 		
 			
-			
+			// 클래스는 공장과 같아서 시스템을 만들어두고 메소드를 불러들여 리턴값을 활용한다 
 	}
 }

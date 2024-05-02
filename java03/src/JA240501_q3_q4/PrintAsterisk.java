@@ -15,7 +15,7 @@ public class PrintAsterisk {
 		
 //		for (int i = 0; i <= num; i++) {
 		//감소시키는 로직을 위해 역으로 진행
-			for (int i = num; i >0; i--) {
+		for (int i = num; i >0; i--) {
 				//하나씩 줄이기 위해 i값 사용
 			for (int j = 0; j < i; j++) {
 				System.out.print("*");
