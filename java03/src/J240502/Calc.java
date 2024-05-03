@@ -5,7 +5,7 @@ package J240502;
  * 
  */
 
-//run - run configurations - arguments - 값 입력 - finish
+
 
 
 public class Calc {
@@ -14,6 +14,7 @@ public class Calc {
 	public static void main(String[] args) {
 		double sum = 0.0;
 		
+		//run - run configurations - arguments - 값 입력 - finish
 		
 //		main 메소드 매개변수 크기만큼 반복
 		for (int i = 0; i < args.length; i++) {
