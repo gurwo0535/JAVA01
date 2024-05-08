@@ -57,7 +57,7 @@ public class Arraymin_1 {
 //			
 //			if (num[i]<min&&num[i]>0) {// 0보다 큰 수만 고려
 //				min = num[i];
-//	
+//	   ---첫 입력 값 1넣으면 오류남 ?? 넘i랑 민이랑 <=쓰는게 맞나?
 //				
 //			}
 //		}
