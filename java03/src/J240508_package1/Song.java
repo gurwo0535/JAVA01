@@ -10,7 +10,7 @@ public class Song {
 	
 	
 	
-	public Song() {//dd/d
+	public Song() {//dd/ddddd
 		
 	}
 //	소스 - 제네레이터 유징 필드 - 바로 입력 
