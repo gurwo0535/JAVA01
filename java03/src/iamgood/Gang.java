@@ -14,6 +14,7 @@ public class Gang{
 			this.name = name;
 			this.korScore = korScore;
 			this.mathScore = mathScore;
+			
 			this.engScore = engScore;
 			
 			avg = (korScore + mathScore + engScore)/3;
