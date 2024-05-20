@@ -5,22 +5,51 @@ import java.util.Scanner;
 
 public class ArrayListEx {
 	public static void main(String[] args) {
+	
+	ArrayList<String> a =  new ArrayList<>();
+	Scanner scanner = new Scanner(System.in);
+	
+	for (int i = 0; i < 4; i++) {
+		 System.out.print("이름을 입력하세요 : ");
+		 String s = scanner.next();
+		a.add(s);
 		
-		Scanner scanner = new Scanner(System.in);
+	}
+	for (int i = 0; i < a.size(); i++) {
+		String name = a.get(i);
+		System.out.print(name+ " ");
 		
-		 ArrayList<String> array = new ArrayList<>();
-		String allname = null;
-		 
-		 for (int i = 0; i < 4; i++) {
-			 System.out.print("이름을 입력하세요 : ");
-			 String name = scanner.next();
-			 array.add(name);
-			 if (i == 3) {
-				 System.out.print(name+" ");
-			 } 
-			  allname+= name;
-			 
+	}
+		int longsetIndex=0;
+		for (int i = 0; i < a.size(); i++) {
+			//a.get(0).length() < a.get(0).length()
+			//a.get(0).length() < a.get(1).length()  / 참이면 longsetIndex=i
+			//a.get(0 or 1).length() < a.get(2).length()/ 참이면 longsetIndex=i
+			//a.get(0 or 1 or 2).length() < a.get(3).length()/ 참이면 longsetIndex=i
+			if (a.get(longsetIndex).length() < a.get(i).length()) {
+				longsetIndex=i;
+			}
+			
 		}
+		
+		System.out.println("\n가장 긴 이름은 : "+a.get(longsetIndex));
+		scanner.close();
+		//나 
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		 ArrayList<String> array = new ArrayList<>();
+//		String allname = null;
+//		 
+//		 for (int i = 0; i < 4; i++) {
+//			 System.out.print("이름을 입력하세요 : ");
+//			 String name = scanner.next();
+//			 array.add(name);
+//			 if (i == 3) {
+//				 System.out.print(name+" ");
+//			 } 
+//			  allname+= name;
+//			 
+//		}
 	}
 }
 
