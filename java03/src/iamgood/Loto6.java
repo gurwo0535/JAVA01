@@ -1,4 +1,4 @@
-package J5020;
+package iamgood;
 
 // 랜덤 중복 안나오게 하기 
 
