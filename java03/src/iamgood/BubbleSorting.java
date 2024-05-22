@@ -5,12 +5,12 @@ import java.util.Arrays;
 public class BubbleSorting {
 	public static void main(String[] args) {
 		
-		int[] BS = {6,5,3,2,1,4,9,8,7,5,3};
+		int[] BS = {10,6,5,3,2,1,4};
 		
 		System.out.println("정렬 전 : "+Arrays.toString(BS));
 		int tmp = 0;
-		for (int i = 0; i < BS.length-1; i++) {
-			for (int j = 0; j < BS.length-1-i; j++) {
+		for (int i = 0; i < BS.length; i++) {
+			for (int j = 0; j < BS.length-1; j++) {
 				
 				if (BS[j]>BS[j+1]) { // 오름차순
 //				if (BS[j]<BS[j+1]) { // 내림차순 
