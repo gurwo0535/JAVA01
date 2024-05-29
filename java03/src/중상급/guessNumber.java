@@ -2,6 +2,8 @@ package 중상급;
 
 import java.util.Scanner;
 
+//while과 if ,else, else if 에 대한 사용법 공부 
+
 public class guessNumber {
 	public static void main(String[] args) {
 		int numberToGuess;
@@ -12,27 +14,26 @@ public class guessNumber {
 		System.out.print("추측한 숫자를 입력하세요 :");
 		guess = scanner.nextInt();
 			
+
+		
 		while (guess!=numberToGuess) {
-			System.out.print("추측한 숫자를 입력하세요 :");
-			guess = scanner.nextInt();
-		
-		
-		if (guess!=numberToGuess) {
 			System.out.println("추측한 숫자가 틀렸습니다");	
-		}else {
-			
-		}
-		else if (guess<=numberToGuess) {
-			System.out.println("쪼메 작네예");			
-		}
+			 if (guess>=numberToGuess) {
+				System.out.println("넘모 큽네다");		
+			}else {
+				System.out.println("쪼메 작네예");			
+			}
+			 System.out.print("추측한 숫자를 입력하세요 :");
+			 guess = scanner.nextInt();	
+		} 
+		System.out.println("맞아여");
+		scanner.close();
 		
-		System.out.println("if 맞아여");
-	}
+			
+	
 	}
 }
-else if (guess>=numberToGuess) {
-	System.out.println("넘모 큽네다");		
-}
+
 
 //*.main 메소드 설계
 // 변수들

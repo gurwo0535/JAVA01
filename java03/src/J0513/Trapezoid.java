@@ -9,11 +9,7 @@ public class Trapezoid {
 	 int height;
 	
 	
-//	public Trapezoid(int down, int up, int heght) {
-//		this.down=down;
-//		this.up=up;
-//		this.height=heght;
-//	}
+
 	
 	public  double getArea() {
 		
