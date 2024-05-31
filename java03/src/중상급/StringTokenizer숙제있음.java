@@ -23,7 +23,8 @@ import java.util.Iterator;
 //	}
 //}		
 		// ---------- 형 ----------- 
-
+//public class StringTokenizer숙제있음 {
+//	public static void main(String[] args) {
 //		String text = "홍길동,장화,홍련,콩쥐,팝쥐";
 //		String tmp = "";
 //		for (int i = 0; i < text.length(); i++) {
@@ -38,32 +39,50 @@ import java.util.Iterator;
 //		
 //	}
 //	}
-
-//	String text = "홍길동,장화,홍련,콩쥐,팝쥐";
-//
-//	
-//	for (int i = 0; i < text.length(); i++) {
-//		if (text.equals(",")) {
-//			text = "\n";
-//		}
-//		System.out.println(text);}
-
-// ======================= 형 ======================
+//=============================================================
 public class StringTokenizer숙제있음 {
 	public static void main(String[] args) {
-
 		String text = "홍길동,장화,홍련,콩쥐,팝쥐";
 		
-		//split() :공백을 기준으로 문자열 나누기
-        String[] names = text.split(",");
-
-        // 배열의 각 요소를 출력
-        for (String name : names) {
-            System.out.println(name);
-        }
+		StringBuffer str = new StringBuffer();
 		
+		for (int i = 0; i < text.length(); i++) {
+			// 문자열의 i번째 문자 읽기
+			char aa = text.charAt(i);
+			
+			if (aa != ',') {
+				// 쉼표가 아닌 경우 이름에 문자 추가
+				str.append(aa);
+			}else {
+				// 쉼표를 만난 경우 이름 출력
+				System.out.println(str);
+				 // 저장된 이름 초기화
+				str.setLength(0);
+			}
+		}
+		
+		System.out.println(str);
 	}
-}
+	}
+
+
+// ======================= 형 ======================
+
+//public class StringTokenizer숙제있음 {
+//	public static void main(String[] args) {
+//
+//		String text = "홍길동,장화,홍련,콩쥐,팝쥐";
+//		
+//		//split() :공백을 기준으로 문자열 나누기
+//        String[] names = text.split(",");
+//
+//        // 배열의 각 요소를 출력
+//        for (String name : names) {
+//            System.out.println(name);
+//        }
+//		
+//	}
+//}
 // =========== 선생님 ===============================
 	// StringTokenizer클래스 활용법 
 	// hasMoreTokens() 연계로 사용 

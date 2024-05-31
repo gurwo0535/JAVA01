@@ -6,14 +6,17 @@ public class RandomArray {
 
 	public static void main(String[] args) {
 
-		System.out.println("정수의 개수 : ");
+		System.out.print("정수의 개수 : ");
 		Scanner scanner = new Scanner(System.in);
-		
+		int count = 0;
 		int num = scanner.nextInt();
-		for (int i = 0; i < num.length; i++) {
+		for (int i = 0; i <num ; i++) {
 			 int random = (int)(Math.random()*100)+1;
-			System.out.println(random);
-			
+			System.out.print(random + " ");
+			count++;
+			if (count%10 ==0) {
+				System.out.println();
+			}
 		}
 		
 	}
